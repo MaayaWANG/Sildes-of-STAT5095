@@ -282,9 +282,14 @@
             \item Both under- and over-sampling will cause information loss
             \item For under-sampling, when $e^\alpha/\rho\to 0$, \rhl{no information loss}
             \item For over-sampling, when $\lambda=0$ or $\infty$, \rhl{no information loss}
-            \item For under-sampling. unweighted estimator with bias correction is more efficient
-            \item For over-sampling. weighted estimator is more efficient
+            \item For \bhl{under-sampling}, \bhl{unweighted estimator} with bias correction is more efficient
+            \item For \bhl{over-sampling}, \bhl{weighted estimator} is more efficient
         \end{itemize}
+        
+        \begin{itemize}
+            \item Under-sampling can also extend to non-uniform sampling
+              probabilities, see \cite{wang2021nonuniform}. 
+        \end{itemize}    
     \end{frame}
 
     \subsection{Survival data}
@@ -545,7 +550,7 @@
     \begin{itemize}
         \item Remember that {\red\textbf{events}} are essential information
         \item We propose to use under-sampling method because it reduces computational complexity
-        \item {\blue\textbf{Under sampling}} is widely used in {\blue binary data} and proposed in \cite{nir2023analyzing} for {\blue survival data}
+        \item {\blue\textbf{Under-sampling}} is widely used in {\blue binary data} and proposed in \cite{nir2023analyzing} for {\blue survival data}
     \end{itemize}
     \begin{exampleblock}{Under-sampling for survivial data}
         \begin{itemize}
